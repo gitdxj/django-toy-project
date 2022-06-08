@@ -19,5 +19,8 @@ from web import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('department/', views.department_list),
+    path('department/list/', views.department_list),
+    path('department/add/', views.department_add),
+    path('department/delete/', views.department_delete),
+    path('department/<int:nid>/edit/', views.department_edit),
 ]
